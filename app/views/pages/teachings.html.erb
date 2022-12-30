@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+  <head>
+  <title>videos</title>
+<%= stylesheet_link_tag "stylesheet" %>
+</head>
+
+
+<body>
+    <div class="header">
+      <h1 id = "titre_principal">
+           <a> Alan Watts </a>
+      </h1>
+    </div>
+<iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/WfVJUKlbWVw?controls=0" title="Watts conference" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+
+
+
+
+
+<div id="myNav" class="overlay">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <div class="overlay-content">
+     <a href="/index">Home</a>
+     <a href="/life">His life</a>
+     <a href="/teachings">Teachings</a>
+     <a href="/contact">Contact Us</a>
+   </div>
+  </div>
+
+<span onclick="openNav()"> <img id= "bouton" src= "https://w7.pngwing.com/pngs/639/1013/png-transparent-hamburger-button-computer-icons-drop-down-list-fast-food-menu-rectangle-share-icon-pancake-thumbnail.png"> </span>
+
+
+<script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "30%";
+    }
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
+
+</html>
